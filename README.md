@@ -1,4 +1,7 @@
+# 前端主流布局系统进阶与实战
+
 ## 目的
+
 - 给自己看
 - 希望能够帮助到像我一样的初学者
 
@@ -90,7 +93,7 @@ vw rem
 
 ![image-20220518080250791](img/image-20220518080250791.png)
 
-- margin-top传递的现象, 子元素的margin-top传递给父元素。 直观：子元素会把父元素往下带
+- **margin-top传递的现象, 子元素的margin-top传递给父元素。** 直观：子元素会把父元素往下带
 
 ```css
 BFC可以解决该问题
@@ -154,3 +157,123 @@ margin-top:50px;
 calc
 ```
 
+
+
+## 浮动 float ？ 
+
+> mdn
+
+- 文档流：块级从上到下，每个元素独占一行; 内联从左到右，排不下换行
+- 设置为浮动，**脱离文档流**，左右布局的一种实现方式，向左或者向右排列
+- 清除浮动的方案
+
+```css
+1. clear:left,right,both 上下关系的
+2. BFC
+3. 空标签
+.clearfix::afterx {
+  
+}
+
+```
+
+#### 浮动布局的注意点
+
+- 只会影响在浮动元素之后的元素
+- 文字
+
+
+
+## 定位
+
+![image-20220518153613384](img/image-20220518153613384.png)
+
+### 相对定位 position:relative;
+
+相对于自身在正常文档中的偏移
+
+不会脱离文档流，不会影响其他元素的布局
+
+### 绝对定位  positon:absolute;
+
+- 脱离文档流
+- 绝对定位元素相对于最近的非static祖先元素定位。 当这样的祖先元素不存在时，则相对于**可视区**定位。
+
+### 固定定位
+
+- 固定定位是相对于浏览器的可视区：浏览器窗口的区域，用户一直可以看到的
+
+### 粘性定位
+
+> 表格当中，首行冻结。 
+
+父元素加上绝对定位
+
+- 应用： 因此，滚动的时候，后面的新闻标题才能把前面已经sticky定位的新闻标题推开，这是sticky定位天然的特性，无需任何JavaScript的帮助 : https://www.zhangxinxu.com/wordpress/2018/12/css-position-sticky/
+
+
+
+
+
+## dispaly属性
+
+## 书写模式与逻辑属性
+
+>  这点对于国际化很重要,对于不同的国家的文字显示不同因此可
+
+## BFC
+
+### 出发条件
+
+1. float的值不是none
+2. postition的值不是static或者relative
+3. display的值是inline-block, talbe-cell, flex, table-caption 后者inline-flex
+4. overflow的值不是visible
+
+### 应用
+
+- 解决margin垂直的折叠
+- 浮动元素的父容器高度塌陷问题
+
+## reset浏览器的默认样式
+
+清除浏览器的默认样式，保证当前的页面与设计稿一致
+
+### 相关资源
+
+- https://meyerweb.com/eric/tools/css/reset/
+
+
+
+
+
+## flex布局
+
+**适合做一维布局**， 一行行，一列列
+
+![截屏2022-05-18 22.48.21](img/flex.png)
+
+### flex的基本概念
+
+###### flex容器
+
+- flex-direction (控制**主轴**的方向)
+  - row
+  - row-reverse
+  - column
+  - column-reverse
+- flex-wrap  (当空间不够的时候，多行显示，子项不伸缩)
+  - nowrap
+  - wrap
+  - wrap-reverse
+- flex-flow
+- Justify-content
+- Align-items 
+
+### flex容器
+
+### flex子项
+
+### 各种常见的布局
+
+### 常见案例
