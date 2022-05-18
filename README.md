@@ -1,3 +1,15 @@
+## 目的
+- 给自己看
+- 希望能够帮助到像我一样的初学者
+
+
+## CSS练习网站
+- 选择器的练习: https://flukeout.github.io/
+- grid布局的练习： https://cssgridgarden.com/
+- flex布局的练习: https://flexboxfroggy.com/
+- CSS的竞技网站(还没怎么看): https://cssbattle.dev/
+
+
 ## 前置知识
 
 - 知道基本的CSS：属性的写法， 选择器，等
