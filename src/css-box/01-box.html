@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景色会平铺到border上去</title>
+    <style>
+        .common {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box1 {
+            border:10px rgba(0,0,0,0.5) solid;
+            padding: 20px;
+        }
+        .box2 {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="common box1">我是一个盒子</div>
+    <div class="common box2">我是另外一个盒子</div>
+</body>
+</html>
