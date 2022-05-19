@@ -257,18 +257,24 @@ calc
 
 ###### flex容器
 
-- flex-direction (控制**主轴**的方向)
+- `flex-direction` (控制**主轴**的方向)
   - row
   - row-reverse
   - column
   - column-reverse
-- flex-wrap  (当空间不够的时候，多行显示，子项不伸缩)
+- `flex-wrap`  (当空间不够的时候，多行显示，子项不伸缩)
   - nowrap
   - wrap
   - wrap-reverse
-- flex-flow
-- Justify-content
-- Align-items 
+- `flex-flow`
+- `justify-content`
+  - flex-start
+  - center
+  - flex-end
+- `align-items `
+- `align-content`
+
+![image-20220519170810697](img/image-20220519170810697.png)
 
 ### flex容器
 
@@ -277,3 +283,19 @@ calc
 ### 各种常见的布局
 
 ### 常见案例
+
+###### 内联与块的上下左右居中布局
+
+![image-20220519171801633](img/image-20220519171801633.png)
+
+##### 不定项的居中布局 (意味着项目的数量不确定 )
+
+![image-20220520062716704](img/image-20220520062716704.png)
+
+###### 均分列布局
+
+![image-20220520065020419](img/image-20220520065020419.png)
+
+###### 子项分组布局
+
+![image-20220520071158860](img/image-20220520071158860.png)

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goods</title>
+    <style>
+        /* 满足多行文字居中的要求 */
+        .box {
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+            display: flex;
+            align-items: center;
+        }
+
+        /* .box {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            display: table-cell;
+            vertical-align: middle;
+        } */
+
+        .box2 {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .inner-box2 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+
+        .position-box {
+            width: 300px;
+            height: 300px;
+            background-color: aquamarine;
+            position:relative;
+        }
+
+        .position-inner {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: absolute;
+            /* 绝对定位的规则 */
+            left: 50%;
+            top: 50%;
+            /* 相对于当前容器 */
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h2>table-cell</h2>
+    <div class="box">
+        测试文字
+        测试文字测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+        测试文字
+    </div>
+    <hr>
+    <h2>flex</h2>
+    <div class="box2">
+        <div class="inner-box2"></div>
+    </div>
+
+    <hr>
+    <h2>position</h2>
+    <div class="position-box">
+        <div class="position-inner"></div>
+    </div>
+</body>
+</html>
