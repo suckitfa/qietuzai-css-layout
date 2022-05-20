@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 300px;
+            background-color: aqua;
+            display: flex;
+        }
+        .main div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            /* flex-grow:0; 默认的 */
+            /* flex-grow: 0.5; */
+         
+            flex-grow: 2;
+        }
+
+        .main2 {
+            width: 500px;
+            height: 300px;
+            background-color: green;
+            display: flex;
+        }
+        .main2 div {
+            height: 200px;
+            background-color: pink;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        .main2 div:nth-of-type(1) {
+            width: 100px;
+        }
+        .main2 div:nth-of-type(2) {
+            width:200px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>1</div>
+    </div>
+    <hr>
+    <div class="main2">
+        <div>1</div>
+        <div>2</div>
+</body>
+</html>

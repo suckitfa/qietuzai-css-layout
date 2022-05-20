@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 200px;
+            background-color: skyblue;
+            display: flex;
+        }
+        .main div {
+            width: 600px;
+            height: 100px;
+            background-color: pink;
+        }
+
+        .main .div1 {
+            flex-shrink: 0;
+        }
+
+        .main .item {
+            border: 1px solid green;
+        }
+        .main .item:nth-of-type(1) {
+            flex-shrink: 1;
+        }
+        .main .item:nth-of-type(2) {
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1"></div>
+    </div>
+
+    <hr>
+    <div class="main">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+</html>
