@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/iconfont.css">
+    <title>Document</title>
+    <style>
+
+        /* 容器相对定位 */ 
+        .swiper-container {
+            position: relative;
+
+        }
+
+        /* 弹性布局 */
+        .swiper-wrapper {
+            display: flex;
+        }
+
+        /* 左右能够溢出 */
+        .swiper-slide {
+            width: 100%;
+            flex-shrink: 0;
+
+        }
+
+        .swiper-slide img {
+            width: 100%;
+        }
+
+        .swiper-pagination {
+            position:absolute;
+            bottom: 28px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #c6bcaf;
+            margin: 0 4px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/1.png" alt=""></div>
+        </div>
+
+        <!-- 分页器 --> 
+        <div class="swiper-pagination">
+            <span class="swiper-pagination-bullet .swiper-pagination-bullet-active"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+            <span class="swiper-pagination-bullet"></span>
+        </div>
+
+        <!-- 导航按钮 -->
+        <div class="swiper-button-prev">
+            <i class="iconfont .icon-left">1</i>
+        </div>
+        <div class="swiper-button-next">
+            <i class="iconfont .icon-right">2</i>
+        </div>
+    </div>
+</body>
+</html>
