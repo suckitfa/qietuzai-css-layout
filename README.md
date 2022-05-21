@@ -344,3 +344,221 @@ calc
 
 
 ![image-20220520135453078](img/image-20220520135453078.png)
+
+
+
+
+
+## 网格布局 grid
+
+web的二维布局系统，利用网格进行行列排版
+
+![image-20220521104833417](img/image-20220521104833417.png)
+
+
+
+![image-20220521104956181](img/image-20220521104956181.png)
+
+### 
+
+![image-20220521105028174](img/image-20220521105028174.png)
+
+![image-20220521105209735](img/image-20220521105209735.png)
+
+![image-20220521105233876](img/image-20220521105233876.png)
+
+### grid容器
+
+![image-20220521105350179](img/image-20220521105350179.png)
+
+![image-20220521105334992](img/image-20220521105334992.png)
+
+![image-20220521105420005](img/image-20220521105420005.png)
+
+#### 定义网格
+
+- 主要有两个属性来划分网格`grid-template-rows`和`grid-template-columns`接受`fr`单位平分剩余空间，或者`px`
+
+  或者`px`后者`百分比`
+
+```css
+.container {
+  display: grid;
+  grid-template-rows:50% 20% auto;
+  grid-template-columns: 100px 100px 100px;
+}
+```
+
+- 网格命名 `grid-template-areas` 然后划分
+
+默认按照网格自动填充（使用子元素填充）
+
+```html
+<style>
+        .main {
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+          
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: 
+            "a1 a1 a2"
+            "a1 a1 a2" 
+            "a3 a3 a3";
+        }
+        .main div {
+            background-color: pink;
+            border:1px black solid;
+
+        }
+        .main div:nth-of-type(1) {
+            grid-area: a1;
+        }
+        .main div:nth-of-type(2) {
+            grid-area: a2;
+        }
+        .main div:nth-of-type(3) {
+            grid-area: a3;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+```
+
+`grid-template`
+
+```css
+.main {
+  grid-template:
+}
+```
+
+![image-20220521111559554](img/image-20220521111559554.png)
+
+#### 网格间隙
+
+- 过时的写法,`grid-row-gap` `grid-column-gap` 简写 `grid-gap`
+- **推荐使用 `row-gap`和`column-gap`， 简写 `gap`  flex中的写法也一样**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid系统划分</title>
+    <style>
+        .main {
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+
+            /* 进行网格划分 */
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template: 
+            "a1 a1 a2"
+            "a1 a1 a2"
+            "a3 a3 a3";
+
+            /* grid-row-gap: 20px;
+            grid-column-gap: 30px; */
+
+            /* row-gap:20px;
+            column-gap:30px; */
+
+            /* 先行后列 */
+            grid-gap:20px 30px;
+        }
+        .main div {
+            background-color: pink;
+        }
+
+        /* 控制子元素占位 */
+        .main div:nth-of-type(1){  /* 1 */
+            grid-area: a1;
+            background-color: yellow;
+        }
+        .main div:nth-of-type(2){  /* 1 */
+            grid-area: a2;
+            background-color: green;
+        }
+        .main div:nth-of-type(3){  /* 1 */
+            grid-area: a3;
+            background-color: aqua;
+        }
+
+        /* 展示flex中的gap */
+        .container {
+            width: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            /* row-gap: 10px;
+            column-gap:20px; */
+            gap:10px 20px;
+        }
+        .container div {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h2>显示grid中的案例</h2>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <hr>
+
+    <h2>显示flex中的gap案列</h2>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
+```
+
+
+
+![image-20220521111803007](img/image-20220521111803007.png)
+
+![image-20220521112122010](img/image-20220521112122010.png)
+
+![image-20220521112139152](img/image-20220521112139152.png)
+
+**以上代码是对该容器进行了划分，系统自动使用布局填充内容。**
+
+## 网格对齐
+
+- justify-items, align-items
+- justify-content, -align-content 
+
+
+
+![image-20220521142813594](img/image-20220521142813594.png)
+
+![image-20220521143003919](img/image-20220521143003919.png)
+
+![image-20220521143957929](img/image-20220521143957929.png)
+
+##### 行列起始位置的缩写
+
+![image-20220521144150738](img/image-20220521144150738.png)
