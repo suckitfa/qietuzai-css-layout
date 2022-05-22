@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>叠加布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .main {
+            width: 330px;
+            height: 184px;
+            display: grid;
+            background-color: aquamarine;
+        }
+        .main img {
+            grid-area: 1/1/1/1;
+        }
+        .main span {
+            grid-area: 1/1/1/1;
+            justify-self: end;
+            color: aliceblue;
+        }
+        .main p {
+            grid-area: 1/1/1/1;
+            align-self: end;
+            background:rgba(0,0,0,0.5);
+            height: 30px;
+            line-height: 30px;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="./baobao.png" alt="">
+        <span>帅！</span>
+        <p>广园最帅！谁有意见？</p>
+    </div>
+</body>
+</html>
