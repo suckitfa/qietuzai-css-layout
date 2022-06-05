@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网易新闻</title>
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        html {
+            font-size: 26.666667px;
+        }
+        body {
+            font-size: 16px;
+        }
+        /* 统一a标签颜色 */
+        a {
+            color: #34372e;
+        }
+        .head {
+            display: flex;
+            height: 43px;
+            background-color: #ef1b1a;
+            color: white;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+        .head i {
+            font-size: 18px;
+        }
+        .head-user,.header-email {
+            width: 25%;
+            font-size: 14px;
+        }
+        .head-email {
+            text-align: right;
+        }
+        .head-logo {
+            width: 50%;
+            text-align: center;
+        }
+        .head-logo img {
+            height: 21px;
+        }
+        .nav {
+            height: 46px;
+            border-bottom: 0.5px #ededed solid;
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+        }
+        .nav li {
+            flex-grow: 1;
+            text-align: center;
+            position: relative;
+        }
+        .nav li.active a{
+            color: #ef191b;
+
+        }
+        /* 伪类作为活动状态 */
+        .nav li.active::after {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 2px;
+            background-color: #ef191b;
+            left: 50%;
+            margin-left: -7px;
+            bottom: -12px;
+        }
+
+        /* 子菜单 */
+        .nav-sub {
+            padding:0 10px;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="head">
+        <div class="head-user">
+            <i class="iconfont icon-yonghu"></i>
+        </div>
+        <div class="head-logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <div class="head-email">
+            <i class="iconfont icon-youxiang"></i>
+            邮箱
+            <i class="iconfont icon-jiantou"></i>
+        </div>
+    </div>
+    <ul class="nav">
+        <li class="active"><a href="#">要闻</a></li>
+        <li><a href="#">推荐</a></li>
+        <li><a href="#">原创</a></li>
+        <li><a href="#">热点</a></li>
+    </ul>
+    <div class="nav-sub">
+        <ul class="nav-sub-list">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">抗疫</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">财经</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">抗疫</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">财经</a></li>
+        </ul>
+        <div class="nav-sub-arrow">
+            <i class="iconfont icon-down-arrow"></i>
+        </div>
+    </div>
+</body>
+</html>
