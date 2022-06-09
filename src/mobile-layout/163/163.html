@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网易新闻</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/reset.css">
+    <title>网易新闻</title>
     <style>
+        /* 根元素的font-size */
         html {
-            font-size: 26.666667px;
+            font-size: 26.66667vw;
         }
         body {
             font-size: 16px;
@@ -75,14 +76,32 @@
 
         /* 子菜单 */
         .nav-sub {
-            padding:0 10px;
+            padding:11px 10px 7px 10px;
             background-color: #f8f8f8;
             position: relative;
         }
-        
+        .nav-sub-list {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-auto-rows: 35px;
+        }
+        /* 控制状态*/
+        .nav-sub__closed {
+            height: 65px;
+            overflow: hidden;
+        }
+        .nav-sub__closed + .nav-sub-arrow {
+            transform: rotate(180deg);
+        }
+        .nav-sub-arrow {
+            position: absolute;
+            right: 10px;
+            bottom:20px;
+        }
     </style>
 </head>
 <body>
+    <!-- head -->
     <div class="head">
         <div class="head-user">
             <i class="iconfont icon-yonghu"></i>
@@ -96,14 +115,21 @@
             <i class="iconfont icon-jiantou"></i>
         </div>
     </div>
+    <!-- nav -->
     <ul class="nav">
         <li class="active"><a href="#">要闻</a></li>
         <li><a href="#">推荐</a></li>
         <li><a href="#">原创</a></li>
         <li><a href="#">热点</a></li>
     </ul>
+    <!-- nav list -->
     <div class="nav-sub">
-        <ul class="nav-sub-list">
+        <ul class="nav-sub-list" >
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">抗疫</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">体育</a></li>
+            <li><a href="#">财经</a></li>
             <li><a href="#">新闻</a></li>
             <li><a href="#">抗疫</a></li>
             <li><a href="#">娱乐</a></li>
@@ -119,5 +145,13 @@
             <i class="iconfont icon-down-arrow"></i>
         </div>
     </div>
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.nav-sub-arrow').click(function(){
+                $(this).parent().toggleClass('nav-sub__closed');
+            });
+        });
+    </script>
 </body>
 </html>
