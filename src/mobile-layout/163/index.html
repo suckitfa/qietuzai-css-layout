@@ -96,7 +96,33 @@
             bottom: 20px;
             transform: rotate(180deg);
         }
-
+        .news {
+            padding: 0 10px;
+        }
+        .news-title {
+            font-size: 18px;
+            line-height: 66px;
+        }
+        .news-item {
+            margin-bottom: 25px;
+        }
+        .news-item-title {
+            width: 295px;
+            line-height: 22px;
+            font-size: 17px;
+            margin-bottom: 8px;
+            font-weight: 400;
+        }
+    
+        .news-item-info {
+            font-size: 12px;
+            color: #b3b4b6;
+        }
+        /* 图片和父元素一样宽 */
+        .news-item-img img {
+            width: 100%;
+            margin-bottom: 9px;
+        }
     </style>
 </head>
 <body>
@@ -144,6 +170,23 @@
         </ul>
         <div class="nav-sub-arrow">
             <i class="iconfont icon-down-arrow"></i>
+        </div>
+    </div>
+    <!--  新闻-->
+    <div class="news">
+        <h class="news-title">今日要闻</h>
+        <div class="news-item">
+            <h3 class="news-item-title">测试标题</h3>
+            <p class="news-item-info">央视网 1小时前 879跟帖</p>
+        </div>
+        <div class="news-item">
+            <h3 class="news-item-title">测试标题</h3>
+            <p class="news-item-info">央视网 1小时前 879跟帖</p>
+        </div>
+        <div class="news-item">
+            <h3 class="news-item-title">测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题</h3>
+            <div class="news-item-img"><img src="./img/news.jpg" alt=""></div>
+            <p class="news-item-info">央视网 1小时前 879跟帖</p>
         </div>
     </div>
     <script src="../../../node_modules/jquery/dist/jquery.js"></script>
