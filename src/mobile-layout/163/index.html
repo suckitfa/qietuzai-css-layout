@@ -71,6 +71,32 @@
             bottom: -12px;
             background-color: #ef191b;
         }
+        .nav-sub {
+            padding: 11px 10px 7px 10px;
+            background-color: #f8f8f8;
+            position: relative;
+        }
+        .nav-sub-list {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-auto-rows: 35px;
+        }
+        /* 菜单展开状态，控制两行的高度，多余的隐藏 */
+        .nav-sub__closed {
+            height: 70px;
+            /* 隐藏内容 */
+            overflow: hidden;
+        }
+        .nav-sub__closed + .nav-sub-arrow {
+            transform: rotate(0);
+        }
+        .nav-sub-arrow {
+            position: absolute;
+            right: 10px;
+            bottom: 20px;
+            transform: rotate(180deg);
+        }
+
     </style>
 </head>
 <body>
@@ -95,5 +121,39 @@
         <li><a href="#">原创</a></li>
         <li><a href="#">热点</a></li>
     </ul>
+    <!-- 子菜单 -->
+    <div class="nav-sub">
+        <!-- 控制交互 -->
+        <ul class="nav-sub-list nav-sub__closed">
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">新闻</a></li>
+        </ul>
+        <div class="nav-sub-arrow">
+            <i class="iconfont icon-down-arrow"></i>
+        </div>
+    </div>
+    <script src="../../../node_modules/jquery/dist/jquery.js"></script>
+    <script>
+        $(function() {
+            // 控制 nav-sub__closed的状态
+            $('.nav-sub-arrow').click(function() {
+                $('.nav-sub-list').toggleClass('nav-sub__closed');
+            });
+        });
+    </script>
 </body>
 </html>
