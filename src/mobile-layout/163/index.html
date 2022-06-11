@@ -123,6 +123,45 @@
             width: 100%;
             margin-bottom: 9px;
         }
+
+        /* 打开APP部分 */
+        .news2 {
+
+        }
+        .news2-item {
+            border-top:0.5px solid #f6f7f9;
+            padding: 10px;
+            display: flex;
+        }
+        .news2-item-content {
+            flex-grow: 1;
+            margin-right: 15px;
+        }
+        .news2-item-title {
+            line-height: 22px;
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+        .news2-item-info {
+            font-size: 12px;
+            color: #b3b4b6;
+            display: flex;
+            justify-content: space-between;
+        }
+        .new2-item-img {
+            width: 117px;
+        }
+        .new2-item-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .news2-item-app  {
+            border: 0.5px solid red;
+            color: #fb1515;
+            border-radius: 100px;
+            padding:2px 5px;
+        }
     </style>
 </head>
 <body>
@@ -184,9 +223,22 @@
             <p class="news-item-info">央视网 1小时前 879跟帖</p>
         </div>
         <div class="news-item">
-            <h3 class="news-item-title">测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题 测试标题 测试标题</h3>
+            <h3 class="news-item-title">测试标题 测试标题测试标题 测试标题 测试标题测试标题 测试标题测试标题</h3>
             <div class="news-item-img"><img src="./img/news.jpg" alt=""></div>
             <p class="news-item-info">央视网 1小时前 879跟帖</p>
+        </div>
+    </div>
+    <!-- 新闻 -->
+    <div class="news2">
+        <div class="news2-item">
+            <div class="news2-item-content">
+                <h3 class="news2-item-title">测试文字</h3>
+                <p class="news2-item-info">
+                    <span>上游新闻 22跟帖</span>
+                    <span class="news2-item-app">打开APP</span>
+                </p>
+            </div>
+            <div class="new2-item-img"><img src="./img/news2.jpg" alt=""></div>
         </div>
     </div>
     <script src="../../../node_modules/jquery/dist/jquery.js"></script>
