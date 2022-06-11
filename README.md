@@ -644,4 +644,10 @@ web的二维布局系统，利用网格进行行列排版
 
 
 
+`user-scalable=no`可以解决移动端点击时间问题
+
 #### 借助px to rem插件换算成REM
+
+> macbook上的快键键是 `options + z`
+>
+> windows上的快捷键是 `ctrl+z`
