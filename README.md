@@ -651,3 +651,16 @@ web的二维布局系统，利用网格进行行列排版
 > macbook上的快键键是 `options + z`
 >
 > windows上的快捷键是 `ctrl+z`
+
+
+
+### 移动端的vm布局的使用
+
+- ps转换为vw插件 `px-to-vw`
+
+- 设置插件的viewportWidth: 375 (iphone下的情况来演示)  
+- 使用快捷键，选择代码 + `options + Z`
+
+
+
+除以2来计算px单位，然后使用插件来转换? 这里为什么要除以2？
