@@ -106,12 +106,15 @@
             height: 100%;
             object-fit: cover;
         }
-        .video-item-pic span {
+        /* 这里注意：子选择器和后代选择器的区别 */
+        .video-item-pic>span {
             grid-area:1/1/1/1;
             align-self: end;
             width: 100%;
             object-fit: cover;
             color: white;
+            display: flex;
+            justify-content: space-between;
         }
     </style>
 </head>
@@ -156,8 +159,8 @@
                 <div class="video-item-pic">
                     <img src="./img/video1.jpg" alt="">
                     <span>
-                        <i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万
-                        <i class="iconfont icon-xinxi"></i>5591
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
                 <h3><a href="#">测试标题</a></h3>
@@ -166,8 +169,8 @@
                 <div class="video-item-pic">
                     <img src="./img/video2.jpg" alt="">
                     <span>
-                        <i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万
-                        <i class="iconfont icon-xinxi"></i>5591
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
                 <h3><a href="#">测试标题</a></h3>
@@ -176,8 +179,8 @@
                 <div class="video-item-pic">
                     <img src="./img/video3.jpg" alt="">
                     <span>
-                        <i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万
-                        <i class="iconfont icon-xinxi"></i>5591
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
                 <h3><a href="#">测试标题</a></h3>
@@ -186,8 +189,8 @@
                 <div class="video-item-pic">
                     <img src="./img/video4.jpg" alt="">
                     <span>
-                        <i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万
-                        <i class="iconfont icon-xinxi"></i>5591
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
                 <h3><a href="#">测试标题</a></h3>
