@@ -12,46 +12,46 @@
             color: #4c514d;
         }
         .head {
-            height: 44px;
+            height: 11.733vw;
             display: flex;
             align-items: center;
-            padding: 0 10px;
+            padding: 0 2.667vw;
         }
         .head-logo {
-            margin-left: 8px;
+            margin-left: 2.133vw;
             /* 将右边的内容全部放在挤出到右边 */
             margin-right: auto;
         }
         .head-logo i{
-            font-size: 28px;
+            font-size: 7.467vw;
             color: #f47296;
         }
         .head-search i{
-            font-size: 22px;
+            font-size: 5.867vw;
             color: #c9c9c9;
         }
         .head-login a{
-            margin-left: 20px;
-            font-size: 12px;
+            margin-left: 5.333vw;
+            font-size: 3.2vw;
             background-color: #e8e8e8;
             border-radius: 50%;
             color: #f47296;
-            padding: 7px;
+            padding: 1.867vw;
         }
         .head-app {
-            margin-right: 2px;
-            margin-left: 20px;
+            margin-right: 0.533vw;
+            margin-left: 5.333vw;
             background-color:  #f47296;
-            border-radius: 5px;
-            padding: 5px 10px;
+            border-radius: 1.333vw;
+            padding: 1.333vw 2.667vw;
         }
         .head-app a {
             color: #fffefc;
         }
         .nav {
-            height: 40px;
-            border-bottom: 0.5px solid #f3f3f3;
-            padding: 0 10px;
+            height: 10.667vw;
+            border-bottom: 0.133vw solid #f3f3f3;
+            padding: 0 2.667vw;
             position: relative;
         }
         .nav-list ul {
@@ -61,8 +61,8 @@
             overflow: hidden;
         }
         .nav-list ul li {
-            width: 40px;
-            margin-right: 20px;
+            width: 10.667vw;
+            margin-right: 5.333vw;
             flex-shrink: 0;
             text-align: center;
             position: relative;
@@ -73,17 +73,17 @@
         .nav-list ul li.active::after{
             content: "";
             position: absolute;
-            width: 44px;
-            height: 2px;
+            width: 11.733vw;
+            height: 0.533vw;
             background-color: #f47296;
-            bottom: -10px;
-            left: -2px;
+            bottom: -2.667vw;
+            left: -0.533vw;
         }
         .nav-arrow{
             position: absolute;
             right: 0;
             bottom: 0;
-            width: 40px;
+            width: 10.667vw;
             height: 100%;
             display: flex;
             align-items: center;
@@ -92,10 +92,10 @@
         }
 
         .video ul{
-            padding: 8px 10px;
+            padding: 2.133vw 2.667vw;
             display: grid;
             grid-template-columns:1fr 1fr;
-            column-gap:10px;
+            column-gap:2.667vw;
         }
         .video-item-pic {
             display: grid;
@@ -105,6 +105,7 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+            border-radius: 0.8vw;
         }
         /* 这里注意：子选择器和后代选择器的区别 */
         .video-item-pic>span {
@@ -115,6 +116,17 @@
             color: white;
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            padding: 0 0.533vw;
+        }
+        .video-item-pic i {
+            margin-right: 1.333vw;
+        }
+        .video-item-title {
+            margin-top: 1.867vw;
+            margin-bottom: 4vw;
+            font-size: 3.2vw;
+            line-height: 4.267vw;
         }
     </style>
 </head>
@@ -163,7 +175,7 @@
                         <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
-                <h3><a href="#">测试标题</a></h3>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
             </li>
             <li class="video-item">
                 <div class="video-item-pic">
@@ -173,7 +185,7 @@
                         <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
-                <h3><a href="#">测试标题</a></h3>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
             </li>
             <li class="video-item">
                 <div class="video-item-pic">
@@ -183,18 +195,60 @@
                         <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
-                <h3><a href="#">测试标题</a></h3>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
             </li>
             <li class="video-item">
                 <div class="video-item-pic">
                     <img src="./img/video4.jpg" alt="">
                     <span>
                         <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>9999</span>
+                    </span>
+                </div>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
+            </li>
+            
+            <li class="video-item">
+                <div class="video-item-pic">
+                    <img src="./img/video1.jpg" alt="">
+                    <span>
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
                         <span><i class="iconfont icon-xinxi"></i>5591</span>
                     </span>
                 </div>
-                <h3><a href="#">测试标题</a></h3>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
             </li>
+            <li class="video-item">
+                <div class="video-item-pic">
+                    <img src="./img/video2.jpg" alt="">
+                    <span>
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
+                    </span>
+                </div>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
+            </li>
+            <li class="video-item">
+                <div class="video-item-pic">
+                    <img src="./img/video3.jpg" alt="">
+                    <span>
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>5591</span>
+                    </span>
+                </div>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
+            </li>
+            <li class="video-item">
+                <div class="video-item-pic">
+                    <img src="./img/video4.jpg" alt="">
+                    <span>
+                        <span><i class="iconfont icon-703bofang-fangxing-xianxing"></i>73.7万</span>
+                        <span><i class="iconfont icon-xinxi"></i>9999</span>
+                    </span>
+                </div>
+                <h3 class="video-item-title"><a href="#">测试标题</a></h3>
+            </li>
+        
         </ul>
     </div>
 </body>
