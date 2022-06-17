@@ -48,6 +48,48 @@
         .head-app a {
             color: #fffefc;
         }
+        .nav {
+            height: 40px;
+            border-bottom: 0.5px solid #f3f3f3;
+            padding: 0 10px;
+            position: relative;
+        }
+        .nav-list ul {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+        }
+        .nav-list ul li {
+            width: 40px;
+            margin-right: 20px;
+            flex-shrink: 0;
+            text-align: center;
+            position: relative;
+        }
+        .nav-list ul li.active {
+            color: #f47296;
+        }
+        .nav-list ul li.active::after{
+            content: "";
+            position: absolute;
+            width: 44px;
+            height: 2px;
+            background-color: #f47296;
+            bottom: -10px;
+            left: -2px;
+        }
+        .nav-arrow{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 40px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+        }
     </style>
 </head>
 <body>
@@ -63,6 +105,22 @@
         </div>
         <div class="head-app">
             <a href="#">下载APP</a>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav-list">
+            <ul>
+                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">动画</a></li>
+                <li><a href="#">番剧</a></li>
+                <li><a href="#">国创</a></li>
+                <li><a href="#">音乐</a></li>
+                <li><a href="#">电影</a></li>
+                <li><a href="#">纪录片</a></li>
+            </ul>
+        </div>
+        <div class="nav-arrow">
+            <i class="iconfont icon-arrow-bottom"></i>
         </div>
     </div>
 </body>
