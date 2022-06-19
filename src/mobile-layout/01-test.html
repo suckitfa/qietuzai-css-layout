@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询小试</title>
+    <style>
+        /* 媒体类型: all , screen, print, speech */
+        /* @media all {
+            .box {
+                font-size: 60px;
+            }
+        } */
+        /* 满足条件出发该样式 */
+        /* @media (min-width: 700px) {
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        } */
+
+        /* @media (orientation:portrait) {
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        }
+        @media (orientation:landscape) {
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: blue;
+            }
+        } */
+        /* @media (min-width: 700px) and (max-width:1200px) {
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        }
+        .box {
+            border: 1px solid red;
+        } */
+        @media not screen and (min-width:700px) {
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: pink;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">aaaaa</div>    
+</body>
+</html>
