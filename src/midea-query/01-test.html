@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./test.css" media="print"> -->
     <title>媒体查询小试</title>
     <style>
         /* 媒体类型: all , screen, print, speech */
@@ -45,11 +46,19 @@
         .box {
             border: 1px solid red;
         } */
-        @media not screen and (min-width:700px) {
+
+        /* @media not screen and (min-width:700px) {
             .box{
                 width: 200px;
                 height: 200px;
                 background-color: pink;
+            }
+        } */
+        @media screen,print and(min-width:700px) {
+            .box {
+                width: 200px;
+                height: 200px;
+                background-color: red;
             }
         }
     </style>
