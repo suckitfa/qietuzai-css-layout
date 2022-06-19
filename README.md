@@ -706,3 +706,24 @@ flex默认会收缩
 ![image-20220619052757971](img/image-20220619052757971.png)
 
 ![image-20220619053951071](img/image-20220619053951071.png)
+
+### 媒体查询的书写位置 (CSS的样式后面会覆盖前面的)
+
+- **样式表的底部**，使用优先级对样式表的样式进行覆盖
+
+![image-20220619110600770](img/image-20220619110600770.png)
+
+```css
+@media (min-width:700px) {
+  .box {
+    background-color:red;
+  }  
+}
+
+@media (min-width:1000px) {
+  .box {
+    background-color:green;
+  }
+}
+```
+
