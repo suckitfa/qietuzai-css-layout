@@ -10,7 +10,7 @@
 
 ## CSS练习网站
 - 选择器的练习: https://flukeout.github.io/
-- grid布局的练习： https://cssgridgarden.com/
+- grid布局的练习： https://cssgridgarden.com/ （做了两次，知识点不全，但是这中学习方法很有创新）
 - flex布局的练习: https://flexboxfroggy.com/
 - CSS的竞技网站(还没怎么看): https://cssbattle.dev/
 
@@ -22,8 +22,9 @@
 ## 页面的开发流程
 
 1. 产品画原型图
-2. 设计出视觉稿
-3. 前端还原视觉稿
+   1. 设计出视觉稿
+
+2. 前端还原视觉稿
 
 ![image-20220516154418969](./img/image-20220516154418969.png)
 
@@ -690,6 +691,10 @@ flex默认会收缩
 
 
 ## 响应式布局
+
+- Responsive Design is the practice of making sure your content looks good on all screen sizes. Everything in the website including layouts, fonts and images should automatically adapt to the user's device.
+
+核心要点就是设配各种大小的屏幕
 
 - 网页能够自动识别屏幕宽度，并做出相应的调整的网页设计。响应式布局可以为不同的用户提供更加舒适的界面和更好的用户体验。
 
