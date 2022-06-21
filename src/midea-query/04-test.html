@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=image.png, initial-scale=1.0">
+    <title>栅格布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .row {
+            background-color: skyblue;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-rows: 50px;
+            grid-auto-rows: 50px;
+        }
+        .row div {
+            background-color: pink;
+            border: 1px solid green;
+        }
+        .row .col-1 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 1;
+        }
+        .row .col-2 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 2;
+        }
+        .row .col-3 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 3;
+        }
+        .row .col-4 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 4;
+        }
+        .row .col-5 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 5;
+        }
+        .row .col-6 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 6;
+        }
+        .row .col-7 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 7;
+        }
+        .row .col-8 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 8;
+        }
+        .row .col-9 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span  9;
+        }
+        .row .col-10 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 10;
+        }
+        .row .col-11 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span  11;
+        }
+        .row .col-12 {
+            /* ?? 语法啥意识？？ */
+            grid-area: auto/auto/auto/span 12;
+        }
+    </style>
+</head>
+<body>
+    <!-- 12个栅格？？ -->
+    <div class="row">
+        <div class="col-3">2</div>
+        <div class="col-3">2</div>
+        <div class="col-3">2</div>
+        <div class="col-3">2</div>
+    </div>
+</body>
+</html>
