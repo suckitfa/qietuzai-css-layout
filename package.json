@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/suckitfa/qietuzai-css-layout#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "jquery": "^3.6.0",
     "swiper": "^8.1.5"
   }

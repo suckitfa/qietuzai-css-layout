@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ul {
+            display: none;
+        }
+        input {
+            display: none;
+        }
+        /* 找到相邻的选择器 */
+        input:checked + ul{
+            display: block;
+        }
+        @media (min-width:700px) {
+            ul {
+                display: block;
+            }
+            span {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 可以扩大复选项框的选中范围 -->
+    <label for="menu"><span>菜单</span></label>
+    <input type="checkbox" id="menu">
+    <ul>
+        <li>首页</li>
+        <li>菜单</li>
+        <li>图片</li>
+    </ul>
+</body>
+</html>
