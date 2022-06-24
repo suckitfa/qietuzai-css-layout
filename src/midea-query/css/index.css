@@ -33,6 +33,7 @@ a {
     text-align: center;
     position: relative;
     display: none;
+    padding: 0 21px;
 }
 /* 选中状态 */
 .nav-list li.active::after {
