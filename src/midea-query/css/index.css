@@ -1,3 +1,7 @@
+/* 定义css变量 */
+:root {
+    --container:100%;
+}
 body {
     background-color: #ebebeb;
 }
@@ -51,4 +55,89 @@ a {
 /* 控制显示和隐藏 */
 .nav-toggle:checked + .nav-list li {
     display: block;
+}
+
+/* 文章区块 */
+.main {
+    padding: 0 15px;
+    width: var(--container);
+    margin:0 auto;
+    box-sizing: border-box;
+}
+
+.main .main-article {
+    background-color: white;
+    margin-top: 35px;
+    padding: 35px;
+    line-height: 1.5;
+}
+.main-article h2 {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 400;
+}
+.main-article div  {
+    text-align: center;
+    color: #959595;
+}
+.main-article p {
+    margin-top: 25px; 
+    font-size: 18px;
+}
+.main-article button {
+    border: none;
+    background-color:#e67e22 ;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin:30px 0;
+}
+/* 文章内部的下划线 */
+.main-article section {
+    border-top: 1px #ebebeb solid;
+    padding-top: 20px;
+}
+.main-article section i{
+    margin-right: 10px;
+}
+.main-aside {
+    background-color: white;
+    padding: 35px; 
+    margin-top: 35px;
+}
+.main-aside h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0;
+    border-bottom: 1px #ccc solid; 
+    position: relative;
+}
+/* 底线 */
+.main-aside h3::after {
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: #e67e22;
+    bottom: -1px;
+    left: 0;
+}
+.main-aside p {
+    margin: 30px 0;
+}
+.main-aside button {
+    border: none;
+    background-color: #e67e22;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 30px 0;
+    width: 100%;
+}
+
+.main-aside a {
+    border: 1px solid #ebebeb;
+    display: inline-block;
+    margin:11px 6px;
+    padding: 10px;
 }

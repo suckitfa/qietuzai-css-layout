@@ -219,7 +219,11 @@
         grid-area: auto/auto/auto/span 12;
     }
 }
+/* 超大屏幕 */
 @media (min-width: 1400px){
+    :root {
+        --container:1160px;
+    }
     .row .col-xxl-1 {
         grid-area: auto/auto/auto/span 1;
     }
