@@ -2,6 +2,7 @@
 :root {
     --container:100%;
 }
+/* 整体的背景色 */
 body {
     background-color: #ebebeb;
 }
@@ -48,11 +49,12 @@ a {
     left: 0;
     bottom: 0;
 }
+/* input控件隐藏 */
 .nav-toggle {
     display: none;
 }
 /* 控制显示和隐藏 */
-.nav-toggle:checked + .nav-list li {
+.nav-toggle:checked + .nav-list ul {
     display: block;
 }
 

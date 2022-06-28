@@ -767,3 +767,26 @@ flex默认会收缩
 - 掌握媒体查询**编写位置**及多查询**语句的编写顺序**
 - 响应式的相关功能：响应式断点，栅格系统，交互实现
 - 响应式案例：Ghost博客，适配不同设备。
+
+
+
+```css
+.nav-list li {
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    position: relative;
+    padding: 0 21px;
+}
+/* 选中状态 */
+.nav-list li.active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #e67e22;
+    left: 0;
+    bottom: 0;
+}
+```
+
