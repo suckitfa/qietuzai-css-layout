@@ -136,9 +136,11 @@ a {
 
 .main-aside a {
     border: 1px solid #ebebeb;
+    background-color:#e67e22 ;
     display: inline-block;
     margin:11px 6px;
     padding: 10px;
+    color: white;
 }
 /* 底栏 */
 .foot {
