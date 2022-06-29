@@ -318,6 +318,11 @@ calc
 
 ###### 内联与块的上下左右居中布局
 
+- Flex + align-items, justify-content
+- table-cell + vertical-align:middle
+- Line-height 
+- position定位
+
 ![image-20220519171801633](img/image-20220519171801633.png)
 
 ##### 不定项的居中布局 (意味着项目的数量不确定 )
@@ -790,3 +795,18 @@ flex默认会收缩
 }
 ```
 
+
+
+## AntDesign实战
+
+> 弹性布局，网格布局，响应式布局
+>
+> 通过综合实战，掌握醒目开发的流程
+
+![image-20220628205128398](img/image-20220628205128398.png)
+
+![image-20220628205204227](img/image-20220628205204227.png)
+
+![image-20220628205308463](img/image-20220628205308463.png)
+
+![image-20220628213357815](img/image-20220628213357815.png)
