@@ -1,4 +1,4 @@
-# x前端主流布局系统进阶与实战
+# 前端主流布局系统进阶与实战
 
 
 
@@ -13,6 +13,7 @@
 - grid布局的练习： https://cssgridgarden.com/ （做了两次，知识点不全，但是这中学习方法很有创新）
 - flex布局的练习: https://flexboxfroggy.com/
 - CSS的竞技网站(还没怎么看): https://cssbattle.dev/
+- https://dev.to/devmount/8-games-to-learn-css-the-fun-way-4e0f?signin=true
 
 
 ## 前置知识
@@ -94,10 +95,11 @@ vw rem
 
 
 ## 盒模型
-
+> padding不可为负数. margin可以，如果出现负数，往相反的方向移动
+> 背景色可以平铺到非margin的区域
 ![image-20220517230346714](img/image-20220517230346714.png)
 
-- 背景色会平铺到非Margin的区域,即：border区域
+- **背景色会平铺到非Margin的区域,即：border区域**
 
 ![image-20220518080250791](img/image-20220518080250791.png)
 
@@ -105,6 +107,7 @@ vw rem
 
 ```css
 BFC可以解决该问题
+给父元素加上边框（边框做成透明的解决该问题）
 ```
 
 - margin上下叠加
@@ -120,7 +123,14 @@ margin-top:50px;
 // 50px;
 ```
 
-**建议使用现代布局： flex, margin**
+- margin叠加的现象
+
+```html
+上下两个元素加margin取最大的margin, 即上线的 max(margin-top,margin-bottom)
+(上下两个方向)
+
+BFC可以解决该问题
+```
 
 
 
