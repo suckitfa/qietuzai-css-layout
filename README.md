@@ -103,9 +103,6 @@ border:1px solid red; 给元素加边框，类似于 console.log
 ```
 
 
-
-> padding不可为负数. margin可以，如果出现负数，往相反的方向移动
-> 背景色可以平铺到非margin的区域
 ![image-20220517230346714](img/image-20220517230346714.png)
 
 - **背景色会平铺到非Margin的区域,即：border区域**
